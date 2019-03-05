@@ -1,1 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Stranger Things</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/javascript/game.js"></script>
+
+</head>
+
+
+
+
+
+<body onload="startUp()">
+
+
+  
+    <div class="container-fluid">
+        <br><br>
+        <div class="row">
+            <div class="col-md-3">
+                <img src="assets/images/stranger things.png" alt="">
+            </div>
+            <div class="col-md-4 col-md-offset-4 top-label">
+                <br>
+                <h1>Guess the Word!</h1>
+                <div class="row">
+                    <div class="col-md-10"> </div>
+
+
+                    <input id="letter" type="text">
+                    <div class="row col-md-2">
+                        <input type id="button" value="Enter" onClick="letter()" />
+
+                    </div>
+                </div>
+
+
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="answer"></div>
+                    </div>
+                </div>
+                <div id="placeholdrow"></div>
+                <div class="row">
+                    <div class="col-md-">
+                    <ul>
+                        <p id="userGuess" type="letter">You Guessed: </p>
+                        <p id="counter"># of Attempts: </p>
+                        <p id="remainingGuesses"># of Guesses Left: </p>
+                        <p id="wins-text">Wins:</p>
+                        <div class="col-md-6"></div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+    </div>
+</body>
+
+<footer>Copyright Amy Merrill 2019</footer>
+
+</html>
