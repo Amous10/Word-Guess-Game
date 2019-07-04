@@ -38,6 +38,7 @@ p {
 #main-game {
   background-color: #202020;
   border: solid 1pt red;
+  margin-bottom: 10px;
 }
 .stats {
   font-size: 30px;
