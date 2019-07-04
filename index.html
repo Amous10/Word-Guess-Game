@@ -5,70 +5,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Stranger Things</title>
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/CSS/style.css">
     <script src="assets/javascript/game.js"></script>
 
+
+    <title>Stranger Things Word Guess</title>
 </head>
 
+<body>
+    <header>
+        <div class="header-image">
+            <img src="./assets/images/stranger-things-copy.png" alt="stranger-logo">
+        </div>
+        <div id="instructions">
+            <h1>Word Guessing Game!</h1>
+            <h2>Press any key to get started!</h2>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="row justify-content-end">
+
+            <div class="col-sm-12 col-md-8 col-lg-8" style="padding-left: 0px">
+
+                <div id="end-game">
+                    <div id="user-win">
+                        <p>You Win!</p>
+                        <p>Press any key to play again.</p>
+
+                    </div>
+                    <div id="user-lost">
+                        <p>Sorry, You Lose!</p>
+                        <p>Press any key to try again.</p>
+                    </div>
+                    <div id="invalidLetter">
+                        <p>Invalid Letter</p>
+                        <p>Try again</p>
+                    </div>
+                    <div id="duplicateLetter">
+                        <p>You already tried this letter.</p>
+                        <p>Pick different Letter.</p>
+                    </div>
+                </div>
 
 
-
-
-<body onload="startUp()">
-
-
-  
-    <div class="container-fluid">
-        <br><br>
-        <div class="row">
-            <div class="col-md-3">
-                <img src="assets/images/stranger things.png" alt="">
+                <div>
+                    <p class="stats" id="word"></p>
+                </div>
+                <div>
+                    <p>Guessed Letters: </p>
+                    <p class="stats" id="guessedLetters"></p>
+                </div>
+                <div>
+                    <p>Number of guesses remaining:</p>
+                    <p class="stats" id="remainingGuesses"></p>
+                </div>
+                <div>
+                    <p>Wins:</p>
+                    <p class="stats" id="wins"></p>
+                </div>
             </div>
-            <div class="col-md-4 col-md-offset-4 top-label">
-                <br>
-                <h1>Guess the Word!</h1>
-                <div class="row">
-                    <div class="col-md-10"> </div>
-
-
-                    <input id="letter" type="text">
-                    <div class="row col-md-2">
-                        <input type id="button" value="Enter" onClick="letter()" />
-
-                    </div>
-                </div>
-
-
-
-                <div class="row">
-                    <div class="col-md-12">
-                        <div id="answer"></div>
-                    </div>
-                </div>
-                <div id="placeholdrow"></div>
-                <div class="row">
-                    <div class="col-md-">
-                    <ul>
-                        <p id="userGuess" type="letter">You Guessed: </p>
-                        <p id="counter"># of Attempts: </p>
-                        <p id="remainingGuesses"># of Guesses Left: </p>
-                        <p id="wins-text">Wins:</p>
-                        <div class="col-md-6"></div>
-                    </div>
-                </div>
-            </div>
-
-
 
         </div>
-    </div>
-    </div>
-</body>
+    </main>
 
-<footer>Copyright Amy Merrill 2019</footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+    </script>
+
+</body>
 
 </html>
