@@ -24,6 +24,7 @@ var wins = 0;
 var word;
 var activeWord;
 var gameReset = true;
+var audio = new Audio('audio_file.mp3');
 
 document.onkeyup = function() {
   if (gameReset) {
@@ -41,6 +42,7 @@ document.onkeyup = function() {
 };
 
 function resetStats() {
+  audio.play();
   remainingGuesses = 12;
   guessedLetters = [];
   activeWord = [];
