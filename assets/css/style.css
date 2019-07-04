@@ -1,13 +1,18 @@
-body {
-  /* background-image: url(../images/stranger-things.png); */
-  background-color: black;
-  color: wheat;
-  background-repeat: none;
-  background-position-y: -200px;
-  background-position-x: 180px;
+html {
+  /* background-image: url(../images/bikes.jpg); */
 }
 
-h1,
+body {
+  /* background-color: black; */
+  background-image: url(../images/bikes.jpg);
+  color: wheat;
+  font-family: fantasy;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
 h2 {
   text-align: center;
 }
@@ -28,6 +33,11 @@ div img {
 p {
   margin: 10px;
   font-size: 24px;
+}
+
+#main-game {
+  background-color: #202020;
+  border: solid 1pt red;
 }
 .stats {
   font-size: 30px;
